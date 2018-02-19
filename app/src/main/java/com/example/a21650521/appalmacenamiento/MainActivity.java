@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvBienvenida;
     static final int SP_CODE = 1;
     static final int AI_CODE = 2;
+    static final int AE_CODE = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,ConsultaAiActivity.class));
     }
     public void almacenarAE(View v){
-
+        startActivityForResult(new Intent(this,AexternoActivity.class),AE_CODE);
     }
 
     @Override
@@ -48,7 +50,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this,"Se ha realizado el almacenamiento interno con éxito",
                         Toast.LENGTH_LONG).show();
             }
-        }else{
+        }else if(requestCode == AE_CODE){
+            if(resultCode == RESULT_OK){
+                Toast.makeText(this,"Se ha realizado el almacenamiento externo con éxito",
+                        Toast.LENGTH_LONG).show();
+            }
+        }
+        else{
             Toast.makeText(this,"no se ha podido realizar el almacenamiento interno",
                     Toast.LENGTH_LONG).show();
         }

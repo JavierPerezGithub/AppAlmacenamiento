@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".SPActivity" />
         <activity android:name=".AInternoActivity" />
-        <activity android:name=".ConsultaAiActivity"></activity>
+        <activity android:name=".ConsultaAiActivity" />
+        <activity android:name=".AexternoActivity"></activity>
     </application>
 
 </manifest>
