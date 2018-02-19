@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.a21650521.appalmacenamiento.MainActivity">
+
+    <TextView
+        android:id="@+id/tvBienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido" />
+
+    <Button
+        android:id="@+id/btnE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnIn"
+        android:layout_marginTop="33dp"
+        android:onClick="almacenarAE"
+        android:text="Almacenamiento Externo" />
+
+    <Button
+        android:id="@+id/btnIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSp"
+        android:layout_marginTop="30dp"
+        android:onClick="almacenarAI"
+        android:text="Almacenamiento Interno" />
+
+    <Button
+        android:id="@+id/btnSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnIn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnIn"
+        android:layout_marginTop="119dp"
+        android:onClick="almacenarSP"
+        android:text="Almacenamiento SP" />
+
+    <Button
+        android:id="@+id/btnConsultarAI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="consultarAI"
+        android:text="Consultar Almacenamiento Intero" />
+
+</RelativeLayout>
