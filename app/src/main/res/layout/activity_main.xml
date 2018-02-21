@@ -39,10 +39,10 @@
         android:id="@+id/btnSp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnIn"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/btnIn"
-        android:layout_marginTop="119dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvBienvenida"
+        android:layout_marginTop="43dp"
         android:onClick="almacenarSP"
         android:text="Almacenamiento SP" />
 
@@ -55,5 +55,16 @@
         android:layout_marginTop="32dp"
         android:onClick="consultarAI"
         android:text="Consultar Almacenamiento Intero" />
+
+    <Button
+        android:id="@+id/btnConsultarEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnConsultarAI"
+        android:layout_marginTop="32dp"
+        android:onClick="consultarAE"
+        android:text="Consultar Almacenamiento Externo" />
 
 </RelativeLayout>

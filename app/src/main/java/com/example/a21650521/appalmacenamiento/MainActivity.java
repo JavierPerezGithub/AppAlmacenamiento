@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
     public void almacenarAE(View v){
         startActivityForResult(new Intent(this,AexternoActivity.class),AE_CODE);
     }
+    public void consultarAE(View v){
+        startActivity(new Intent(this,ConsultaAeActivity.class));
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
