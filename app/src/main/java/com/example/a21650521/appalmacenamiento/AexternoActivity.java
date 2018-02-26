@@ -29,7 +29,7 @@ public class AexternoActivity extends AppCompatActivity {
         File f = new File(rutaAe.getAbsolutePath(), NOM_FICHERO_EXTERNO);
         OutputStreamWriter osw = null;
         try {
-            osw = new OutputStreamWriter(new FileOutputStream(f));
+            osw = new OutputStreamWriter(new FileOutputStream(f,true));
             osw.write(etTexto.getText().toString());
 
             guardarPreferencias();

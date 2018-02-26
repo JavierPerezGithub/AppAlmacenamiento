@@ -20,7 +20,6 @@ public class AInternoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ainterno);
         etNombre = findViewById(R.id.etNombreAI);
-
     }
     public void guardarAI(View v){
         String string = etNombre.getText().toString();

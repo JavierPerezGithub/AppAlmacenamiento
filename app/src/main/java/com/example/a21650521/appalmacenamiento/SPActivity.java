@@ -14,8 +14,11 @@ public class SPActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sp);
         etNombre = findViewById(R.id.etNombre);
     }
+
+    //Si me piden guardar en SharedPreferences
     public void guardarSP(View v){
-        SharedPreferences sp = getPreferences(MODE_PRIVATE);
+        //recupera el fichero de preferencias y si no existe lo crea con el nombre que le he indicado
+        SharedPreferences sp = getSharedPreferences("SPActivity",MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("NOMBRE", etNombre.getText().toString());
         editor.commit();
